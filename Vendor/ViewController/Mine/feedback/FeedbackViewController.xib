@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfs-zO-h2J">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hke-Yp-H0r">
+                            <rect key="frame" x="0.0" y="10" width="600" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="XwG-88-EcP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="          请输入您的邮箱地址，方便我们联系您" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwy-xC-xRO">
+                            <rect key="frame" x="0.0" y="211" width="600" height="53"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="53" id="T1g-RA-K74"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Xwy-xC-xRO" secondAttribute="trailing" id="2Xf-R1-1CS"/>
+                        <constraint firstAttribute="bottom" secondItem="hke-Yp-H0r" secondAttribute="bottom" constant="336" id="3gy-FG-uwR"/>
+                        <constraint firstAttribute="height" constant="600" id="4fz-KF-GG4"/>
+                        <constraint firstItem="hke-Yp-H0r" firstAttribute="top" secondItem="Gfs-zO-h2J" secondAttribute="top" constant="10" id="C0U-M5-mGe"/>
+                        <constraint firstAttribute="trailing" secondItem="hke-Yp-H0r" secondAttribute="trailing" id="Oh3-W9-RXA"/>
+                        <constraint firstItem="Xwy-xC-xRO" firstAttribute="top" secondItem="hke-Yp-H0r" secondAttribute="bottom" constant="1" id="QUz-tn-KZz"/>
+                        <constraint firstItem="Xwy-xC-xRO" firstAttribute="top" secondItem="hke-Yp-H0r" secondAttribute="bottom" constant="83" id="X94-N5-voK"/>
+                        <constraint firstItem="hke-Yp-H0r" firstAttribute="leading" secondItem="Gfs-zO-h2J" secondAttribute="leading" id="bqU-0E-FGd"/>
+                        <constraint firstItem="Xwy-xC-xRO" firstAttribute="leading" secondItem="Gfs-zO-h2J" secondAttribute="leading" id="egt-ko-5WV"/>
+                        <constraint firstItem="hke-Yp-H0r" firstAttribute="leading" secondItem="Xwy-xC-xRO" secondAttribute="leading" id="fsI-ib-VjD"/>
+                        <constraint firstItem="hke-Yp-H0r" firstAttribute="trailing" secondItem="Xwy-xC-xRO" secondAttribute="trailing" id="kqW-PA-CJA"/>
+                        <constraint firstItem="hke-Yp-H0r" firstAttribute="centerX" secondItem="Gfs-zO-h2J" secondAttribute="centerX" id="lDe-PR-9hm"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="X94-N5-voK"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Gfs-zO-h2J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hu0-tH-mcc"/>
+                <constraint firstAttribute="bottom" secondItem="Gfs-zO-h2J" secondAttribute="bottom" id="iTP-UE-0Uf"/>
+                <constraint firstAttribute="trailing" secondItem="Gfs-zO-h2J" secondAttribute="trailing" id="lv1-Ej-P2c"/>
+                <constraint firstItem="Gfs-zO-h2J" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tr3-Iw-H94"/>
+                <constraint firstItem="Gfs-zO-h2J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wtA-DQ-MTE"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoveryViewController">
+            <connections>
+                <outlet property="ContentView" destination="62B-HC-D43" id="pXm-eN-18a"/>
+                <outlet property="SegmentedControl" destination="viF-gZ-cKd" id="dD9-gu-ZZ0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfj-9P-JpW">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="viF-gZ-cKd">
+                            <rect key="frame" x="240" y="23" width="121" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="121" id="UUd-yR-H0X"/>
+                            </constraints>
+                            <segments>
+                                <segment title="企业主"/>
+                                <segment title="众包客"/>
+                            </segments>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21568627450980393" green="0.33725490196078434" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3wz-Af-CQP"/>
+                        <constraint firstItem="viF-gZ-cKd" firstAttribute="centerX" secondItem="Jfj-9P-JpW" secondAttribute="centerX" id="Y60-j8-VKD"/>
+                        <constraint firstItem="viF-gZ-cKd" firstAttribute="top" secondItem="Jfj-9P-JpW" secondAttribute="top" constant="23" id="cSt-WK-MiX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62B-HC-D43" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="64" width="600" height="426"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="62B-HC-D43" secondAttribute="trailing" id="3pB-14-yIA"/>
+                <constraint firstItem="Jfj-9P-JpW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Hi-io-D9L"/>
+                <constraint firstAttribute="trailing" secondItem="Jfj-9P-JpW" secondAttribute="trailing" id="JyN-5j-X8n"/>
+                <constraint firstItem="62B-HC-D43" firstAttribute="top" secondItem="Jfj-9P-JpW" secondAttribute="bottom" id="KjI-qg-PZt"/>
+                <constraint firstItem="Jfj-9P-JpW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XAi-nb-9vu"/>
+                <constraint firstAttribute="bottom" secondItem="62B-HC-D43" secondAttribute="bottom" constant="110" id="jHn-05-r0M"/>
+                <constraint firstItem="62B-HC-D43" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="twI-Vi-JCm"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="290"/>
+        </view>
+    </objects>
+</document>
